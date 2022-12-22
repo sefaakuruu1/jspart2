@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h3 id="title" class="cart-title">ToDo App</h3>
+    </div>
+    <ul id="task-list">
+        <li class="task">Gorev 1</li> 
+        <li class="task">Gorev 2</li>
+        <li class="task">Gorev 3</li>
+    </ul>
+    <ul id="task-list2">
+        <li class="task">Gorev 1</li> 
+        <li class="task">Gorev 2</li>
+        <li class="task">Gorev 3</li>
+    </ul>
+    <script>
+let sonuc;
+sonuc=document.getElementsByClassName("task")[0];//0 indexini koymazsak task classındakı tumunu getirir.
+let tasklist=document.getElementsByClassName("task");
+for(let i=0;i<tasklist.length;i++){
+    console.log(tasklist[i]);
+    
+}
+for(let task of tasklist){
+        task.style.color="red";
+    }
+
+    //kapsam belirterk elemanlara topluca ulaşım da saglanabilir.
+
+    ul=document.getElementById("task-list");
+    tasklist=ul.getElementsByClassName("task");
+    //queryselector hepsini seçmeyi saglar task listin altındaki li elemanları demektri
+    
+    tasklist=document.querySelectorAll("#task-list li")
+
+console.log(sonuc);
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card_header"> 
+    <h3 class="cart-ttle" id="title">todo app</h3>
+<ul>
+    <li>
+        gorev 1
+    </li>
+    <li>
+        gorev2
+    </li>
+    <li>
+        gorev3
+    </li>
+</ul>
+    <script>
+  let sonuc=document.getElementById("title"); 
+  //  <h3 id="title">todo app</h3> =sonuc
+
+ sonuc=document.getElementById("title").id;//title
+ sonuc=document.getElementById("title").className; //cart-title
+ document.getElementById("title").style.fontsize="50px";
+ document.getElementById("title").innerText="TOdO aPP";//GORUNTULENEN TEXTI DEGISTIRIR
+ document.getElementById("title").innerHTML="<p>TOdO aPP</p>";
+    
+ sonuc =document.querySelector("#title");
+ sonuc =document.querySelector(".cart-heder");//classa ulasma
+ sonuc=document.querySelector("li:first-child"); 
+ sonuc=document.querySelector("li:last-child"); 
+ sonuc=document.querySelector("li"); //boyle verirsek linın ıcındekı ılk elemanı tyazdırır,
+ 
+ 
+   </script>
+</div>
+</body>
+</html>
